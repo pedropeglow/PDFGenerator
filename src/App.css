@@ -1,38 +1,48 @@
-.App {
-  text-align: center;
+:root {
+  --primary: #86cad6;
+  --white: #ffffff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: Roboto;
+  src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700&display=swap');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body {
+  font-family: Roboto;
+}
+
+.tableWrapper {
+  padding: 20px;
+}
+
+.title {
+  font-size: 35px;
   }
+
+.titleDiv {
+  margin: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.buttonDiv {
+  float: right;
+  margin-right: 15px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+button {
+  float: right;
+  border: 1px solid #F0FAFA;
+  background-color: var(--primary);
+  padding: 10px 30px;
+  text-decoration: none;
+  font-weight: 300;
+  border-radius: 200px;
+  color: #fff;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button:hover {
+  border: 1px solid #E1F1F4;
+  background-color: grey;
 }
+
