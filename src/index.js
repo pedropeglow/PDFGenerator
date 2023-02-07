@@ -5,22 +5,6 @@ import ReactGA from "react-ga";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
-import { createBrowserHistory } from "history";
-
-const history = createBrowserHistory();
-const { REACT_APP_TRACKINGID } = process.env;
-
-// Inicializando o Google Analytics
-if (process.env.REACT_APP_TRACKINGID != null) {
-  ReactGA.initialize(REACT_APP_TRACKINGID, {
-    cookieDomain: "auto",
-  });
-
-  history.listen((location) => {
-    ReactGA.set({ page: window.location.href }); // Update the user's current page
-    ReactGA.pageview(window.location.href); // Record a pageview for the given page
-  });
-}
 
 ReactDOM.render(
   <React.StrictMode>
